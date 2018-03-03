@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -17,135 +17,134 @@
     <head>
         <div class = "jumbotron">
         <h1>Trivia Game!!</h1>
+        <div class = "heading">
+        <h3>Time Left</h3>
+        <a id="start" href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start</a>
+        <span id="timer"><strong>00:00</strong></span>
         </div>
-    </head> 
+        </div>
+     
 
     <div class = "main-container">
-        <h2>Questions</h2>
-
+        <h2>Questions</h2> 
+        <div class = "first-question">
         <p>1. Who was the legendary Benedictine monk who invented Champagne?</p> 
         
                 <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Edgar Spickerman</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio1">  Edgar Spickerman</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Nicholas Wang</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio1">  Nicholas Wang</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Todd Pickell</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio1">  Todd Pickell</label>
                       </div>
                       <div class="radio">
-                            <label><input id="right-answer" type="radio" name="optradio">Dom Perignon</label>
+                            <label id="right-answer1"><input type="radio" value="checked" name="optradio1">  Dom Perignon</label>
                           </div>
                 </div>
         <br>
         <br>
-
+        <div class = "second-question">
         <p>2. Name the largest freshwater lake in the world?</p> 
         
                 <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Salt Lake</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio2">  Salt Lake</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Lake Hemeth</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio2">  Lake Hemeth</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Lake Superior</label>
+                        <label id="right-answer2"><input type="radio" name="optradio2" value="checked">  Lake Superior</label>
                       </div>
                       <div class="radio">
-                            <label><input id="right-answer" type="radio" name="optradio">Big Bear Lake</label>
+                            <label class="wrong-answer"><input type="radio" name="optradio2">  Big Bear Lake</label>
                           </div>
-                </div>
+                        </div>
         <br>
         <br>
 
-        <p>3. Name the largest freshwater lake in the world?</p> 
+
+        <p>3. Where would you find the Sea of Tranquility?</p> 
         
                 <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Salt Lake</label>
+                        <label id="right-answer3"><input type="radio" name="optradio3" value="checked">  The Moon</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Lake Hemeth</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio3">  Jupiter</label>
                       </div>
                       <div class="radio">
-                        <label><input id="right-answer" type="radio" name="optradio">Lake Superior</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio3">  Venus</label>
                       </div>
                       <div class="radio">
-                            <label><input id="wrong-answer" type="radio" name="optradio">Big Bear Lake</label>
+                            <label class="wrong-answer"><input type="radio" name="optradio3">  Mars</label>
                           </div>
-                </div>
+                
         <br>
         <br>
 
-        <p>4. Where would you find the Sea of Tranquility?</p> 
+        <p>4. What is someone who shoes horses called?</p> 
         
                 <div class="radio">
-                        <label><input id="right-answer" type="radio" name="optradio">The Moon</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio4">  Saddler</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Jupiter</label>
+                        <label id="right-answer4"><input type="radio" name="optradio4" value="checked">  A farrier</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Venus</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio4">  Marksman</label>
                       </div>
                       <div class="radio">
-                            <label><input id="wrong-answer" type="radio" name="optradio">Mars</label>
+                            <label class="wrong-answer"><input type="radio" name="optradio4">  Bareback</label>
                           </div>
-                </div>
+                
         <br>
         <br>
 
-        <p>5. What is someone who shoes horses called?</p> 
+        <p>5. What is the world's biggest island</p> 
         
                 <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Saddler</label>
+                        <label id="right-answer5"><input type="radio" name="optradio5" value="checked">  Greenland</label>
                       </div>
                       <div class="radio">
-                        <label><input id="right-answer" type="radio" name="optradio">A farrier</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio5">  Iceland</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Marksman</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio5">  Hawaii</label>
                       </div>
                       <div class="radio">
-                            <label><input id="wrong-answer" type="radio" name="optradio">Bareback</label>
+                            <label class="wrong-answer"><input type="radio" name="optradio5">  Anarctica</label>
                           </div>
-                </div>
+                
         <br>
         <br>
 
-        <p>6. What is the world's biggest island</p> 
+         <p>6. What is the capital city of Spain?</p> 
         
                 <div class="radio">
-                        <label><input id="right-answer" type="radio" name="optradio">Greenland</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio6">  Granada</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Iceland</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio6">  Valencia</label>
                       </div>
                       <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Hawaii</label>
+                        <label class="wrong-answer"><input type="radio" name="optradio6">  Barcelona</label>
                       </div>
                       <div class="radio">
-                            <label><input id="wrong-answer" type="radio" name="optradio">Anarctica</label>
+                            <label id="right-answer6"><input type="radio" name="optradio6" value="checked">  Madrid</label>
                           </div>
-                </div>
-        <br>
-        <br>
-        
-         <p>7. What is the capital city of Spain?</p> 
-        
-                <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Granada</label>
-                      </div>
-                      <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Valencia</label>
-                      </div>
-                      <div class="radio">
-                        <label><input id="wrong-answer" type="radio" name="optradio">Barcelona</label>
-                      </div>
-                      <div class="radio">
-                            <label><input id="right-answer" type="radio" name="optradio">Madrid</label>
-                          </div>
-                </div>
+        </div>
+        <div class ="submit">
+                <a id="submit-button" href="##" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Submit Answer</a>
+        </div>
+
+        <div class ="scores">
+            <div id="correct">Correct Score: </div>
+            <div id="incorrect">Incorrect Score: </div>
+        </div>
+    </head>     
+
+<script type="text/javascript" src = "../assets/javascript/app.js"></script>       
 
 </body>
 </html>

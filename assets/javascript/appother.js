@@ -39,8 +39,7 @@ function scoring() {
 
     var incorrectScore = 6 - correctAnswer.length
     var score = correctScore 
-    $("#correct").text("Number of Correct:  " + correctScore)
-    $("#incorrect").text("Number of Incorrect:  " + incorrectScore)
+    $(".results").innerHTML(correctAnswer)
    console.log(correctAnswer, correctScore, incorrectScore)
     })
 
@@ -121,23 +120,11 @@ function scoring() {
 // //         console.log(score)
 // //     }
 // // }
-$("#start").on("click", function() {
-var count = 60;
-var counter=setInterval(timer, 1000);
 
-function timer() {
-    count = count-1
-    if (count <=0) {
-        clearInterval(counter);
-        return
-    }
-    $("#timer").html(count + "seconds")
-}
-})
+// var clock = {
+//     time: 5,
 
-    
-
-//  timeConverter: function(t) {
+// timeConverter: function(t) {
 
 //     var minutes = Math.floor(t / 60);
 //     var seconds = t - (minutes * 60);
@@ -155,39 +142,16 @@ function timer() {
 
 //     return minutes + ":" + seconds;
 //   }
-// }
-// function start(t) {
-//     var minutes = Math.floor(t / 60);
-//     var seconds = t - (minutes * 60);
-//     $("#start").on("click", function() {
-//     $("#display").html("<span>" + minutes + "</span><span>" + seconds + "</span>" + "yayy")
-//     console.log("started")
-// })
-// }
+
+// } 
+
 
 
 // var rightAnswer = ["Dom Perignon", "Lake Superior", "The Moon", "A farrier", "Greenland", "Madrid"]
 
 $(document).ready(function() {
-    $(".main-container").hide()
-
-    $("#start").on("click", function() {
-        $(".main-container").show()
-        var count = 60;
-        var counter=setInterval(timer, 1000);
-        
-        function timer() {
-            count = count-1
-            if (count ===0) {
-                clearInterval(counter);
-                alert("Game Over")
-                return
-            }
-            $("#timer").html(count + "seconds")
-        }
-    
-        })
     scoring()
+    $(".results").html(correctScore)
     
-    
+
 })
